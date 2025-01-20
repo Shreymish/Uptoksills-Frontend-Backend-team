@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <title>FAQ'S - Uptoskills:Learn,Pratice,Test,Improve,Succeed</title>
+    <style>
+        body {
+            font-family: Arial,sans-serif;
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .top-bar {
+            background-color:black;
+            color:white;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            font-size: 14px;
+        }
+        .top-bar a {
+            color: white;
+            text-decoration: none;
+            margin-left: 15px;
+        }
+        .logo {
+            display:flex;
+            align-items:center;
+            
+        }
+        .logo img {
+            max-height:30px;
+        }
+        .nav {
+            background-color:#D3D3D3;
+            display: flex;
+            justify-content:center;
+            padding:18px 0;
+            position:sticky;
+            top: 0;
+            z-index:1000;
+            border-bottom: 1px solid #ccc;
+        }
+        .nav ul {
+            display:flex;
+            list-style:none;
+            padding:0;
+            margin:0;
+        }
+        .nav li{
+            margin: 0 15px;
+        }
+        .nav a {
+            text-decoration: none;
+            color:#ffffff;
+            font-size: 18px;
+            font-weight: bold;
+            padding:5px 10px;
+            transition:color 0.3s;
+        }
+        .nav a:hover {
+            color:#e67e22;
+        }  
+        .login-buttons {
+            display: flex;
+            gap: 10px;
+        }
+        .login-buttons a {
+            background-color: #e67e22;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 15px;
+        }
+        .login-buttons a:hover {
+            background-color: #d35400;
+        }
+        .faq-questions{
+            flex: 1;
+            max-width: 900px; 
+            margin: 50px auto; /* FAQ SECTION COMES BELOW THE NAVIGATION BAR */
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius:5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        details{
+            margin-bottom: 15px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color:#fff;
+            transition: background-color 0.3s ease;
+        }
+        details:hover {
+            background-color: #40e0d0; /* Background on hover */
+        }
+        summary:hover{
+            cursor: pointer;
+        }
+        details summary::marker{
+            content: '+';
+            font-weight: bold;
+        }
+        details p {
+            margin:10px 0 0;
+            font-size:18px;
+            color:#555;
+        }
+        details[open] summary::marker {
+            content: '- ';
+        }
+        .faqs-banner {
+            background-image: url(http://uptoskills.com/wp-content/uploads/2023/05/faqs-banner.png);
+            background-size: cover; 
+            background-position: center; 
+            background-repeat: no-repeat; 
+            width: 100%;
+            height: 100vh;
+            display:flex;
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center; 
+            color:#ffffff;
+        }
+        .wrapper-images {
+            flex: 1;
+            position: relative;
+            flex-wrap: wrap; 
+            margin-bottom: 10px;
+        }
+        .wrapper-images img {
+            width: 100%;
+            border-radius: 5px;
+            height: auto; 
+            object-fit: cover;
+            position: absolute;
+        }
+        .overlay-images {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            height: 100vh;
+        }
+        .faq-section {
+            display: flex;
+            align-items: flex-start;
+            gap:20px;
+            flex-wrap: wrap; /* Ensures that content flows within available space */
+            margin-top: 20px; 
+            margin-bottom: 50px; 
+        }
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .footer-column {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+        }
+        .footer-column h2{
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+        .footer-column p,
+        .footer-column a {
+            color: #A9A9A9;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .footer-column a:hover {
+            color: #57c2ff;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+        }
+        footer {
+            text-align:center;
+            padding: 10px;
+            background-color:#06061e;
+            color:#ccc;
+            
+        }
+    </style>
+</head>
+<body>
+    <!--TOP BAR & LOGIN BUTTONS-->
+    <div class = "top-bar">
+        <div>Palam,New Delhi,Delhi 110077 &emsp;| &emsp; info@uptoskills.com &emsp;| &emsp; +91-9319772294</div>
+        <div class = "login-buttons">
+            <a href = "#">Employer Login</a>
+            <a href = "#">Candidate Login</a>
+        </div>
+    </div>
+    <!--UPTOSKILLS LOGO & NAVIGATION ITEMS-->
+    <div class = "nav">
+        <nav>
+            <div class = "logo">
+                <ul>
+                    <img src="https://uptoskills.com/wp-content/uploads/2023/04/hd-logo-iguru.png" alt="Uptoskills Logo">
+                    <li><a href = "#">Internship</a></li>
+                    <li><a href = "#">Jobs</a></li>
+                    <li><a href = "#">Learn & Earn</a></li>
+                    <li><a href = "#">Discover +</a></li>
+                </ul>
+            </div>
+        </nav> 
+    </div>
+    <div  class="faqs-banner">
+        <h1 class="faq-title" style="font-weight:bold; font-size: 40px;">FAQ's</h1>
+        <h4 class="faq-subtitle" style="font-weight:lighter;">Home &gt; <u>FAQs</u></h4>
+    </div>
+    <!--FAQ's Section-->
+    <div class="faq-section">
+        <div class="wrapper-images">
+            <div class="overlay-images" style="z-index: 2"><img src="https://uptoskills.com/wp-content/uploads/2023/05/question_4_inner.png"  alt=" "></div>
+            <div class="overlay-images"  style="z-index: 1"><img  src="https://uptoskills.com/wp-content/uploads/2019/10/faq_01-1.png"  alt=" "></div>
+            <div class="overlay-images"  style="z-index: 3"><img  src="https://uptoskills.com/wp-content/uploads/2019/10/faq_01-3.png"  alt=" "></div>
+            <div class="overlay-images"  style="z-index: 4"><img  src="https://uptoskills.com/wp-content/uploads/2019/10/faq_01-4.png"  alt=" "></div>
+        
+        </div>
+        <div class="faq-questions">
+            <h3 style="color:#e67e22">FAQ's</h3>
+            <h1>Popular Questions</h1>
+            <details>
+                <summary>What if i did not receive a password reset message</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+            <details>
+                <summary>where can i find my program certificate</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+            <details>
+                <summary>when does my course start and end</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+            <details>
+                <summary>can you help me select an enrollment path</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+            <details>
+                <summary>when does my course start and end</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+            <details>
+                <summary>How can I change my account email or password</summary>
+                <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
+            </details>
+        </div> 
+    </div>
+    <!--Footer Section-->
+    <footer class = "footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <img src="https://uptoskills.com/wp-content/uploads/2023/04/hd-logo-iguru.png" alt="Uptoskills Logo">
+                <p><strong><span style="color: #e67e22;">Address: </span></strong>Palam, New Delhi, Delhi 110077</p>
+                <p><strong><span style="color: #e67e22;">Email: </span></strong>info@uptoskills.com</p>
+                <p><strong><span style="color: #e67e22;">Phone: </span></strong>+91-9319772294</p>
+            </div>
+            <div class="footer-column">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Jobs & Internships</a></li>
+                    <li><a href="#">Become a Trainer</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Short Links</h2>
+                <ul>
+                    <li><a href="#">Terms & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Refund & Cancellation Policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>Find Us Here</h2>
+                <p><a href="#">Login to Download Certificate</a></p>
+            </div>
+        </div>
+        <p style="color:#808080"; text-align="left";>Copyright © 2025 UptoSkills. All Rights Reserved.</style>
+    </footer>
+</body>
+</html>
