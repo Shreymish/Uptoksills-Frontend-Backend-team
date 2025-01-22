@@ -1,0 +1,84 @@
+.head-container{
+    background-color:black;
+    height:40px;
+    border-top-left-radius:10px;
+}
+.head-items{
+    float:left;
+    color:white;
+    font-weight: 500;
+    margin-left:90px;
+    margin-right: 25px;
+    text-decoration: none;
+}
+a{
+    padding:10px 10px;
+}
+button{
+    background-color:darkorange;
+    margin-left:15px;
+    color:white;
+}
+.button1{
+    font-size:11px;
+    height:39px;
+}
+.button2{
+    height:40px;
+    padding-right:20px;
+    text-align: center;
+}
+i{
+    color:white;
+    margin-left:25px;
+}
+.banner-container{
+    background-image: url("http://uptoskills.com/wp-content/uploads/2023/05/about-banner.jpg");
+    height:90vh;
+    width:98vw;
+}
+.banner-items{
+    color:white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration:none;
+    margin-right:40px;
+}
+img{
+    width:300px;
+    height:50px;
+    margin-left:80px;
+    margin-right: 40px;
+}
+.items1{
+    font-size:30px;
+    color:white;
+    font-weight: bolder;
+}
+.items2{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+.items3{
+    text-decoration: underline;
+    color:white;
+    font-size: 20px;
+}
+#banner-child-items{
+    padding-left:45%;
+    padding-top:15%;
+}
+#about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top:5%;
+}
+q{
+    color:grey;
+    font-size:20px;
+}
+#youtube{
+    margin-top:7%;
+}
