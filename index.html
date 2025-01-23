@@ -3,546 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Uptoskills-FAQ</title>
+    <title>About Me - Revati Murgodkar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+        }
+
+        header {
+            background: url('image.jpg') no-repeat center center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid #ffffff;
+        }
+
+        header h1 {
+            font-size: 3.5em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: black;
+        }
+
+        section {
+            padding: 40px 20px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #fefefe;
+        }
+
+        .about {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .about img {
+            max-width: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        }
+
+        .about p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        .hobbies {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hobbies ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .hobbies li {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .projects {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .projects ul {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+        }
+
+        .projects li {
+            background: #333;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+        }
+
+        .projects a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .projects a:hover {
+            color: white;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .contact form input, .contact form textarea {
+            padding: 15px;
+            border: 1px solid #444;
+            border-radius: 5px;
+            font-size: 16px;
+            background: #222;
+            color: white;
+            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+        }
+
+        .contact form button {
+            padding: 15px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            transition: background-color 0.3s;
+        }
+
+        .contact form button:hover {
+            background-color: #574bff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+            border-top: 5px solid #f9f9f9;
+        }
+    </style>
 </head>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-<link href="style.css" rel="stylesheet">
 <body>
-  <style>
-    body {
-    font-family:sans-serif;
-    margin:0;
-    padding:0;
-}
-
-/* Styling for the logo */
-.logo {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 2rem;
-  font-weight: bold;
-  color: #FF6B35 ;
-  display: flex;
-  align-items: center;
-}
-
-.upto {
-  color: #FF6B35; /* Orange color for 'UPTO' */
-}
-
-.skills {
-  color: #28C98C; /* Green color for 'SKILLS' */
-  position: relative;
-}
-
-.cap {
-  display: inline-block;
-  position: absolute;
-  top: 20px;
-  left: -5px;
-  width: 10px;
-  height: 10px;
-  margin-left: 10px;
-  background: url('Images/cap.png') no-repeat left;
-  background-size: contain; /* Adjust to ensure proper fit */
-}
-
-
-/* Style for Employer Login Button */
-.btn-light {
-  background-color: orange;
-  border-color: orange; /* Border color */
-  color: white; /* Text color */
-}
-
-/* Style for Candidate Login Button */
-.btn-light {
-  background-color: orange;
-  border-color: orange; /* Border color */
-  color: white; /* Text color */
-}
-
-.btn-outline-light:hover {
-  background-color: darkorange; /* Background color on hover */
-  color:white; /* Text color on hover */
-}
-
-.btn-light:hover {
-  background-color: darkorange; /* Darker background color on hover */
-}
-
-
-.navbar-toggler {
-  border: none;
-  background-color: transparent;
-  padding: 0;
-}
-
-.navbar-toggler-icon {
-  background-color: aqua;  /* Change the hamburger icon color to green */
-}
-
-/* Style for offcanvas menu */
-.offcanvas-end {
-  background-color: #343a40;  /* Dark background for the offcanvas menu */
-  color: white;  /* White text color */
-  width: 250px;  /* Set the width of the offcanvas menu */
-}
-
-/* Style for the offcanvas header */
-.offcanvas-header {
-  background-color: #222;  /* Darker background for header */
-  color: white;  /* White text */
-  padding: 15px;
-  border-bottom: 1px solid #444;  /* Subtle border at the bottom */
-}
-
-.offcanvas-title {
-  font-size: 1.25rem;  /* Larger font size for the title */
-}
-
-/* Style for the close button in the header */
-.btn-close {
-  background-color: aqua;  /* Close button in green */
-  border: none;
-  color: white;
-}
-
-/* Style for the navigation links inside the offcanvas */
-.nav-item .nav-link {
-  color: white;  /* White text for the nav links */
-  font-size: 1.1rem;
-  padding: 10px 15px;
-  text-transform: uppercase;  /* Make text uppercase */
-  transition: background-color 0.3s ease;  /* Smooth transition for hover effect */
-}
-
-.nav-item .nav-link:hover {
-  background-color: aqua;  /* Green background on hover */
-  color: white;  /* Text color remains white */
-}
-
-/* Style for the navbar links in general */
-.navbar-nav {
-  list-style-type: none;  /* Remove default list styling */
-  padding: 0;
-  margin: 0;
-}
-
-.navbar-nav .nav-item {
-  margin: 10px 0;  /* Add space between menu items */
-}
-
-
-/* nav-items */
-.nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
-}
-
-.nav ul li {
-  display: inline;
-  margin: 0 10px;
-}
-
-.nav ul li a {
-  display: inline-block;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.nav ul li a:hover {
-  text-decoration: underline;
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-.nav ul li a:active {
-  background-color: #004080; /* Even darker shade for active */
-  transform: scale(0.95); /* Slight shrink effect on click */
-}
-
-
-  .FAQ-image{
-      background-image: url('Images/FAQ.jpg'); /* Path to your image */
-      background-size: cover; /* Ensures the image covers the entire container */
-      background-position: center; /* Centers the image */
-      background-repeat: no-repeat; /* Prevents tiling */
-      height: 80%; 
-      width: 100%; 
-      object-fit: cover;
-      position: relative; /* To position the text-overlay */
-  }
-  
-
-
-  .text-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    /* transform: translate(-50%, -50%); */
-    color: white;
-    text-align: center;
-    font-size: 3rem;
-    font-weight: bold;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Adds shadow for better contrast */
-  }
-
-  .breadcrumb {
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    color: #555;
-    margin: 10px 0;
-    gap: 5px;
-}
-
-.breadcrumb a {
-    text-decoration:none;
-    color:white; 
-    transition: color 0.3s ease;
-}
-
-.breadcrumb a:hover {
-    color: white;
-    text-decoration: underline;
-}
-  
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-/* Left Section */
-.left-section {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 50%;
-}
-
-.faq-image {
-  max-width: 80%;
-  height: 50%;
-  width: 50%;
-}
-
-/* Right Section */
-.right-section {
-  flex: 1;
-  max-width: 50%;
-  padding: 20px;
-}
-
-h5{
-  color: #FF6B35;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.faq-title {
-  font-size: 3rem;
-  font-weight: bolder;
-  margin-bottom: 20px;
-  font-family: sans-serif;
-}
-
-.faq-item {
-  margin-bottom: 15px;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 10px;
-}
-
-summary {
-  font-weight: bold;
-  font-size: 1rem;
-  background-color: #f0f8ff;
-  padding: 10px;
-  border-radius: 5px;
-  cursor: pointer;
-  position: relative;
-  list-style: none;
-}
-
-summary:hover{
-  background-color:aqua;
-  transform: scale(1);
-}
-
-
-summary::after {
-  content: '+';
-  position: absolute;
-  right: 10px;
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-details[open] summary::after {
-  content: '-';
-}
-
-details p {
-  margin: 10px 0 0 10px;
-  font-size: 0.9rem;
-  line-height: 1.5;
-}
-
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .container {
-      flex-direction: column;
-      padding: 10px;
-  }
-
-  .left-section, .right-section {
-      max-width: 100%;
-  }
-
-  .faq-image {
-      max-width: 90%;
-  }
-}
-
-
-.footer {
-  background-color: #1c1e26;
-  color: #fff;
-  padding: 30px 0;
-}
-
-.footer-container {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  max-width: 1500px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-section {
-  flex: 1;
-  margin: 10px;
-  min-width: 200px;
-}
-
-.footer-section h2, .footer-section h3 {
-  margin-bottom: 10px;
-}
-
-.footer-section p, .footer-section ul, .footer-section a {
-  font-size: 14px;
-  margin: 5px 0;
-  color: #b0b3b8;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.footer-section a:hover {
-  color: #fff;
-}
-
-
-  </style>
-
-    <div class="container-fluid">
-    <nav class="navbar bg-body-teritary fixed-top bg-dark">
-        <div class="container-fluid">
-        
-         <a class="navbar-brand logo" href="#">
-          <span class="Upto">UPTO</span>
-          <span class="skills">SKILLS</span>
-          <span class="cap"></span>
-         </a>
-
-          <!-- Add Login Buttons -->
-
-           <div class="d-flex align-items-center justify-content-center">
-            <!-- Add Employer and Candidate Login Buttons -->
-             
-             <button class="btn btn-outline-light me-2" type="button">Employer Login</button> 
-            <button class="btn btn-light me-2" type="button">Candidate Login</button>
-
-           </div>
-
-            <!-- nav items -->
-            <div class="nav">
-                <ul>
-                    <li><a href="#">Internship</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Jobs</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Learn &Earn</a></li>
-                </ul>
-                <ul>
-                    <li><a href="#">Discover +</a></li>
-                </ul>
-              </div>                                          
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Employers Branding</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">For colleges</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Corporate/CSR</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Free Internship</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Free Jobs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Free Courses</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Online MBA</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Learn & Earn (Hackathons & Competitions)</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Faculty Development</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Programs</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">The Uptoskills Podcast Show</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Become a Trainer</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contacts</a>
-                  </li>
-                </ul>
-                <div class="content">
-                </div>
-            </div>
-          </div>
+    <header>
+        <h1>Revati Murgodkar</h1>
+        <p>Engineering Student | Web Development Intern</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <div class="about">
+            <img src="profile.jpg" alt="Profile Picture">
+            <p>
+                Hi! I'm Revati Murgodkar, an engineering student with a deep enthusiasm for web development. I love creating interactive, responsive, and aesthetically pleasing web designs. My journey as the Design Head of the Art Cell in my tech club has enhanced my skills and allowed me to collaborate on exciting projects.
+            </p>
         </div>
-      </nav>
+    </section>
 
-
-      <!-- FAQ-Image  -->
-    <img src="https://uptoskills.com/wp-content/uploads/2023/05/faqs-banner.png" alt="background image" class="FAQ-image">
-
-
-    <!-- Text overlay -->
-    <div class="text-overlay">
-        FAQ'S
-        <div class="breadcrumb">
-            <a href="#">Home</a>  >  <a href="#">FAQ</a>
-        </div>
-      </div>
-
-      <div class="container">
-        <!-- Left Section: Image -->
-        <div class="left-section">
-            <img src="https://uptoskills.com/wp-content/uploads/2023/05/question_4_inner.png" alt="FAQ Character" class="faq-image">
-        </div>
-
-        <!-- Right Section: FAQ -->
-        <div class="right-section">
-          <h5>FAQ'S</h5>
-            <h1 class="faq-title">Popular Questions</h1>
-
-            <details class="faq-item">
-              <summary>What if i did not receive a passord reset message?</summary>
-              <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
-            </details>
-
-            <details class="faq-item">
-                <summary>Where can I find my program certificate?</summary>
-                <p>Your program certificate will be available in your profile under "My Certificates."</p>
-            </details>
-                   
-            <details class="faq-item">
-              <summary>How do I verify my identity?</summary>
-              <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Where does my course start and end?</summary>
-              <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
-            </details>
-
-            <details class="faq-item">
-              <summary>Can you help me select an enrollement my path?</summary>
-              <p>Whether you want to develop as a professional or discover a new hobby, there’s an online course for that.</p>
-            </details>
+    <section id="projects">
+            <h2>Projects</h2>
+            <div class="projects">
+                <ul>
+                    <li>
+                        <strong>Project 1: Personal Portfolio Website</strong>
+                        <p>Used Bootstrap to create a responsive website with dynamic features, React.js to create interactive UI components. Used CSS to style the webpages and enhancing their layouts, HTML to define the basic structure of the webpages.</p>
+                    </li>
+                    <li>
+                        <strong>Project 2:Emotion Recognition System</strong> 
+                        <p>Built a system to detect emotions from facial expressions using deep learning, aiding mental health analysis.</p>
+                    </li>
+                    <li>
+                        <strong>Project 3:Allesure</strong> 
+                        <p>An interactive website that helps users identify and manage their allergies by offering a personalized quiz to assess symptoms and recommending tailored blogs and articles for better understanding and care.</p>
+                    </li>
+                    <li>
+                        <strong>Project 4:Traffic Management System</strong> 
+                        <p>An AI-powered traffic management system that provides real-time tracking of parking lot availability by monitoring car entries and exits, ensuring seamless parking solutions through an intuitive website interface.</p>
+                    </li>
+                </ul>
             </div>
+        </section>
 
-<div class="footer-container">
-            <footer class="footer">
-              <div class="footer-container">
-                <div class="footer-section">
-                   <h2>UptoSkills</h2> 
-                  
-                  <p><strong>Address:</strong> Palam, New Delhi, Delhi 110077</p>
-                  <p><strong>Email:</strong> info@uptoskills.com</p>
-                  <p><strong>Phone:</strong> +91-9319772294</p>
-                  
-                </div>
-                <div class="footer-section">
-                  <h3>Quick Links</h3>
-                  <ul>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Courses</a></li>
-                    <li><a href="#">Events</a></li>
-                    <li><a href="#">Jobs & Internships</a></li>
-                    <li><a href="#">Become a Trainer</a></li>
-                  </ul>
-                </div>
-                <div class="footer-section">
-                  <h3>Short Links</h3>
-                  <ul>
-                    <li><a href="#">Terms & Condition</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Refund & Cancellation Policy</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                  </ul>
-                </div>
-                <div class="footer-section">
-                  <h3>Find Us Here</h3>
-                  <p><a href="#">Login to Download Certificate</a></p>
-                </div>
-              </div>
-            </footer>
-</div>
-      
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobbies">
+            <ul>
+                <li>Exploring new web development technologies</li>
+                <li>Sketching and painting</li>
+                <li>Participating in hackathons</li>
+                <li>Reading tech blogs</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Revati Murgodkar. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! I will get back to you soon.');
+        });
+    </script>
 </body>
 </html>
+
+
