@@ -3,258 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Revati Murgodkar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-        }
-
-        header {
-            background: url('image.jpg') no-repeat center center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            border-bottom: 5px solid #ffffff;
-        }
-
-        header h1 {
-            font-size: 3.5em;
-            margin: 0;
-        }
-
-        header p {
-            font-size: 1.5em;
-            margin-top: 10px;
-        }
-
-        nav {
-            text-align: center;
-            margin: 20px 0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            padding: 10px 20px;
-            border: 2px solid white;
-            border-radius: 20px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        nav a:hover {
-            background-color: white;
-            color: black;
-        }
-
-        section {
-            padding: 40px 20px;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-
-        section h2 {
-            text-align: center;
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            color: #fefefe;
-        }
-
-        .about {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .about img {
-            max-width: 200px;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-        }
-
-        .about p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            text-align: center;
-        }
-
-        .hobbies {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .hobbies ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .hobbies li {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-
-        .projects {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            align-items: center;
-        }
-
-        .projects ul {
-            list-style: none;
-            padding: 0;
-            width: 100%;
-        }
-
-        .projects li {
-            background: #333;
-            padding: 15px;
-            border-radius: 5px;
-            margin: 10px 0;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-        }
-
-        .projects a {
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        .projects a:hover {
-            color: white;
-        }
-
-        .contact form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        .contact form input, .contact form textarea {
-            padding: 15px;
-            border: 1px solid #444;
-            border-radius: 5px;
-            font-size: 16px;
-            background: #222;
-            color: white;
-            box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
-        }
-
-        .contact form button {
-            padding: 15px;
-            background-color: #6c63ff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            font-size: 16px;
-            cursor: pointer;
-            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
-            transition: background-color 0.3s;
-        }
-
-        .contact form button:hover {
-            background-color: #574bff;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #222;
-            color: white;
-            border-top: 5px solid #f9f9f9;
-        }
-    </style>
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Revati Murgodkar</h1>
-        <p>Engineering Student | Web Development Intern</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <a href="#about">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="#contact">Contact Me</a>
-    </nav>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm <span>Shravani</span></h1>
+            <p>A passionate web developer and designer.</p>
+            <!-- <a href="#projects" class="btn">View My Work</a> -->
+        </div>
+    </section>
 
     <section id="about">
         <h2>About Me</h2>
-        <div class="about">
-            <img src="profile.jpg" alt="Profile Picture">
-            <p>
-                Hi! I'm Revati Murgodkar, an engineering student with a deep enthusiasm for web development. I love creating interactive, responsive, and aesthetically pleasing web designs. My journey as the Design Head of the Art Cell in my tech club has enhanced my skills and allowed me to collaborate on exciting projects.
-            </p>
-        </div>
+        <p>As a passionate web developer, I specialize in creating dynamic and responsive web applications using the MERN stack and Angular. My expertise in CSS allows me to design visually appealing interfaces that enhance user experiences. I thrive on turning ideas into functional code and continuously strive to expand my skill set, recently exploring Figma for design and prototyping. With a commitment to clean, efficient coding and a strong focus on user-centric design,
+             I am dedicated to building innovative solutions that meet the needs of clients and users alike..</p>
     </section>
 
     <section id="projects">
-            <h2>Projects</h2>
-            <div class="projects">
-                <ul>
-                    <li>
-                        <strong>Project 1: Personal Portfolio Website</strong>
-                        <p>Used Bootstrap to create a responsive website with dynamic features, React.js to create interactive UI components. Used CSS to style the webpages and enhancing their layouts, HTML to define the basic structure of the webpages.</p>
-                    </li>
-                    <li>
-                        <strong>Project 2:Emotion Recognition System</strong> 
-                        <p>Built a system to detect emotions from facial expressions using deep learning, aiding mental health analysis.</p>
-                    </li>
-                    <li>
-                        <strong>Project 3:Allesure</strong> 
-                        <p>An interactive website that helps users identify and manage their allergies by offering a personalized quiz to assess symptoms and recommending tailored blogs and articles for better understanding and care.</p>
-                    </li>
-                    <li>
-                        <strong>Project 4:Traffic Management System</strong> 
-                        <p>An AI-powered traffic management system that provides real-time tracking of parking lot availability by monitoring car entries and exits, ensuring seamless parking solutions through an intuitive website interface.</p>
-                    </li>
-                </ul>
+        <h2>My Projects</h2>
+        <div class="project-list">
+            <div class="project-item">
+                <h3>Object Recognition System </h3>
+                <p>Automated and improved the accuracy of identifying and classifying objects. The system leverages deep learning techniques to recognize and categorize objects in images with high precision. My role involved implementing machine learning algorithms using PyTorch and testing the system’s performance on diverse datasets, achieving a significant accuracy improvement over traditional methods.</p>
             </div>
-        </section>
-
-    <section id="hobbies">
-        <h2>Hobbies</h2>
-        <div class="hobbies">
-            <ul>
-                <li>Exploring new web development technologies</li>
-                <li>Sketching and painting</li>
-                <li>Participating in hackathons</li>
-                <li>Reading tech blogs</li>
-            </ul>
+            <div class="project-item">
+                <h3>Allesure</h3>
+                <p>This project focused on addressing the challenges faced by individuals with allergies. The website enables users to input symptoms and receive suggestions for managing their allergies, thereby improving their quality of life. I contributed by designing the database schema using SQL and creating a user-friendly front-end interface with HTML.</p>
+            </div>
+            <div class="project-item">
+                <h3>Traffic Management System</h3>
+                <p>An AI-powered traffic management system that provides real-time tracking of parking lot availability by monitoring car entries and exits, ensuring seamless parking solutions through an intuitive website interface.</p>
+            </div>
         </div>
     </section>
 
-    <section id="contact" class="contact">
+    <section id="contact">
         <h2>Contact Me</h2>
-        <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-            <button type="submit">Send Message</button>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+    
+            <button type="submit" class="btn">Send Message</button>
         </form>
     </section>
-
     <footer>
-        <p>&copy; 2025 Revati Murgodkar. All Rights Reserved.</p>
+        <p>© 2025 Shravani. All rights reserved.</p>
     </footer>
+    
+    
+    
 
-    <script>
-        document.querySelector('form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for reaching out! I will get back to you soon.');
-        });
-    </script>
+   
+
+    <script src="script.js"></script>
 </body>
 </html>
-
-
